@@ -19,6 +19,10 @@ public class kelayakanUjian {
 
         boolean tidakDispensasi = !dispensasi;
 
+        int cek = 0;
+        boolean x = (kehadiran >= 75) && (cek++ >= 0);
+        boolean y = (nilaiTugas >= 60) || (cek++ >= 0);
+
         System.out.println();
         System.out.println("===== KELAYAKAN UJIAN =====");
         System.out.println("Kehadiran   : " + kehadiran + "%");
